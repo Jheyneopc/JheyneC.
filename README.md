@@ -1,4 +1,5 @@
-*PE01*Project Description
+*PE018*
+Project Description
 
 This project was developed for the PE01 Programming Exercise. The goal was to build a simple machine learning application using the Iris dataset and deploy it as a Flask API.
 
