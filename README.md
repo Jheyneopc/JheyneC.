@@ -1,3 +1,51 @@
+*PE02*
+Project Description
+
+This project was developed for the PE02 Programming Exercise. The goal of this project was to improve the Iris machine learning API created in PE01 by adding a new route that provides runtime information from the container.
+
+The application runs a trained machine learning model using the Iris dataset and exposes a Flask API. In this exercise, a new /runtime endpoint was added to return information about the execution environment.
+
+Objective
+
+The main objective of this assignment is to demonstrate basic concepts of:
+
+Extending an existing Flask API
+
+Working with Docker containers
+
+Accessing runtime and system information
+
+Creating new REST endpoints
+
+New Feature
+
+A new route /runtime was added.
+This route returns a JSON response containing:
+
+Python version
+
+Operating system platform
+
+Container hostname
+
+Installed package versions (Flask, scikit-learn, Joblib)
+
+Output
+
+The API returns JSON responses.
+
+The /predict route returns:
+
+A numeric prediction label
+
+A human-readable species name
+
+The /runtime route returns:
+
+Runtime and environment information from the container
+
+
+
 *PE01*
 
 Project Description
