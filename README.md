@@ -5,7 +5,7 @@ This project was developed for the PE02 Programming Exercise. The goal of this p
 
 The application runs a trained machine learning model using the Iris dataset and exposes a Flask API. In this exercise, a new /runtime endpoint was added to return information about the execution environment.
 
-Objective
+*Objective*
 
 The main objective of this assignment is to demonstrate basic concepts of:
 
@@ -17,7 +17,7 @@ Accessing runtime and system information
 
 Creating new REST endpoints
 
-New Feature
+*New Feature*
 
 A new route /runtime was added.
 This route returns a JSON response containing:
@@ -30,7 +30,7 @@ Container hostname
 
 Installed package versions (Flask, scikit-learn, Joblib)
 
-Output
+*Output*
 
 The API returns JSON responses.
 
