@@ -7,13 +7,13 @@ correct predictions after each build.
 
 *What this project does*
 
-- Trains a machine learning model using the Iris dataset
-- Deploys a Flask API to serve predictions
-- Uses GitHub Actions to:
-  - Install dependencies
-  - Train the model
-  - Run the Flask application
-  - Validate the model output using a cURL-based integration test
+ Trains a machine learning model using the Iris dataset
+ Deploys a Flask API to serve predictions
+ Uses GitHub Actions to:
+  Install dependencies
+  Train the model
+   Run the Flask application
+   Validate the model output using a cURL-based integration test
 
 *Continuous Delivery Validation*
 
