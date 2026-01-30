@@ -1,0 +1,41 @@
+name: CD - ML Model Deployment
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Train Model
+        run: python train_model.py
+
+      - name: Run Flask App
+        run: |
+          nohup python app.py &
+          sleep 5
+
+      - name: Validate Model Output
+        run: |
+          response=$(curl -s -X POST http://localhost:5000/predict \
+            -H "Content-Type: application/json" \
+            -d '{"features":[6.7,3.1,4.4,1.4]}' )
+
+          echo "API response: $response"
+
+          # Ajusted if necessary (0, 1 ou 2)
+          echo "$response" | grep -q '"prediction":1'
+          echo "Model prediction check passed."
