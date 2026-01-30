@@ -1,3 +1,27 @@
+
+*PE03*
+
+The goal of this exercise is to improve the GitHub Actions workflow by adding an
+automatic validation step to verify that the machine learning model produces
+correct predictions after each build.
+
+*What this project does*
+
+- Trains a machine learning model using the Iris dataset
+- Deploys a Flask API to serve predictions
+- Uses GitHub Actions to:
+  - Install dependencies
+  - Train the model
+  - Run the Flask application
+  - Validate the model output using a cURL-based integration test
+
+*Continuous Delivery Validation*
+
+After every push to the `main` branch, the workflow automatically sends a test
+request to the `/predict` endpoint and checks whether the returned prediction is
+correct. If the prediction is not as expected, the workflow fails.
+
+
 *PE02*
 Project Description
 
