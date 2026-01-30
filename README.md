@@ -1,25 +1,36 @@
+*PE03 Project Description*
 
-*PE03*
+This project was developed for the PE03 Programming Exercise.  
+The goal of this exercise was to improve the existing machine learning deployment by adding an automated validation step to the GitHub Actions CI/CD workflow.
 
-The goal of this exercise is to improve the GitHub Actions workflow by adding an
-automatic validation step to verify that the machine learning model produces
-correct predictions after each build.
+The application trains a machine learning model using the Iris dataset and serves predictions through a Flask API. In this exercise, the CI/CD pipeline was extended to automatically verify that the deployed model produces correct predictions after each build.
 
-*What this project does*
+*Objective*
 
- Trains a machine learning model using the Iris dataset
- Deploys a Flask API to serve predictions
- Uses GitHub Actions to:
-  Install dependencies
-  Train the model
-   Run the Flask application
-   Validate the model output using a cURL-based integration test
+The main objective of this assignment is to demonstrate basic concepts of:
 
-*Continuous Delivery Validation*
+- Continuous Integration and Continuous Delivery (CI/CD)
+- GitHub Actions workflows
+- Automated testing of machine learning models
+- Integration testing using cURL
+- Model validation after deployment
 
-After every push to the `main` branch, the workflow automatically sends a test
-request to the `/predict` endpoint and checks whether the returned prediction is
-correct. If the prediction is not as expected, the workflow fails.
+*New Feature*
+
+A new validation step was added to the GitHub Actions workflow (`cd_pipeline.yml`).
+
+After the model is trained and the Flask API is launched, the workflow sends a test request to the `/predict` endpoint using cURL and verifies the returned prediction.
+
+If the prediction is correct, the workflow completes successfully.  
+If the prediction is not as expected, the workflow fails automatically.
+
+This simulates a Continuous Delivery check that ensures every new commit builds, trains, and validates the deployed model.
+
+
+*Output*
+
+A successful GitHub Actions run includes a validation step labeled *Validate Model Output*, confirming that the model prediction matches the expected result.
+
 
 
 *PE02*
