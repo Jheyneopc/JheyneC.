@@ -9,11 +9,11 @@ The application trains a machine learning model using the Iris dataset and serve
 
 The main objective of this assignment is to demonstrate basic concepts of:
 
-- Continuous Integration and Continuous Delivery (CI/CD)
-- GitHub Actions workflows
-- Automated testing of machine learning models
-- Integration testing using cURL
-- Model validation after deployment
+Continuous Integration and Continuous Delivery (CI/CD)
+GitHub Actions workflows
+Automated testing of machine learning models
+Integration testing using cURL
+Model validation after deployment
 
 *New Feature*
 
