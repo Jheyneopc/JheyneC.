@@ -1,3 +1,37 @@
+*PE04 Project Description*
+
+This project was developed for the PE04 Programming Exercise.
+
+The goal of this exercise is to improve the Kaizen cycle from the previous assignment HOA04 by adding traceability and observability to the machine learning model update process.
+
+The application uses the Iris dataset and a Random Forest classifier to simulate continuous improvement of a machine learning model.
+
+Each execution compares a new model with the current best model. The model is only replaced if the new accuracy is higher.
+
+*Objective*
+
+The main objective of this assignment is to demonstrate basic concepts of:
+- Continuous improvement (Kaizen) in machine learning
+- Model performance comparison
+- Traceability using timestamps
+- Observability through performance logging
+
+*New Feature*
+
+A logging mechanism was added to record when each model evaluation occurred.
+
+Each run stores:
+- Old model accuracy
+- New model accuracy
+- Whether the model was improved
+- Timestamp of the evaluation
+
+*Output*
+
+The script prints the comparison results and saves the log to:
+model/performance_log.csv
+
+
 *PE03 Project Description*
 
 This project was developed for the PE03 Programming Exercise.  
