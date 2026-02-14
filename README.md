@@ -1,14 +1,14 @@
-*PE05 Project Description
+*PE05 Project Description*
 
 This project was developed for the PE05 Programming Exercise.
 
-The goal of this exercise is to improve the monitoring system from the previous assignment by adding input validation, error logging, and proper HTTP responses to simulate how production MLOps systems detect and track invalid API requests.
+The goal of this exercise is to improve the monitoring system from the previous assignment "HOS05" by adding input validation, error logging, and proper HTTP responses to simulate how production MLOps systems detect and track invalid API requests.
 
 The application uses the Iris dataset and a Random Forest classifier to simulate a monitored machine learning prediction service.
 
 Invalid requests are detected, logged, and handled gracefully.
 
-*Objective
+*Objective*
 
 The main objective of this assignment is to demonstrate basic concepts of:
 
@@ -18,7 +18,7 @@ The main objective of this assignment is to demonstrate basic concepts of:
 - Monitoring of model requests
 - Observability in machine learning services
 
-*New Feature
+*New Feature*
 
 A validation mechanism was added to detect malformed or missing JSON inputs in the `/predict` endpoint.
 
@@ -28,7 +28,7 @@ When invalid input is detected:
 - The API returns an HTTP 400 response
 - The issue is recorded in the log file for monitoring
 
-*Logging and Monitoring
+*Logging and Monitoring*
 
 The application records:
 
@@ -41,7 +41,7 @@ Logs are stored in:
 
 logs/app.log
 
-*Output
+*Output*
 
 The API provides:
 
