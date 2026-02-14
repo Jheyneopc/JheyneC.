@@ -1,18 +1,55 @@
-*PE05 - Monitoring App
+*PE05 Project Description
 
-*Setup
-pip install -r requirements.txt
+This project was developed for the PE05 Programming Exercise.
 
-*Run
-python monitoring_app.py
+The goal of this exercise is to improve the monitoring system from the previous assignment by adding input validation, error logging, and proper HTTP responses to simulate how production MLOps systems detect and track invalid API requests.
 
-*Test (valid)
-curl -X POST http://localhost:5000/predict -H "Content-Type: application/json" -d '{"features":[5.1,3.5,1.4,0.2]}'
+The application uses the Iris dataset and a Random Forest classifier to simulate a monitored machine learning prediction service.
 
-*Test (invalid)
-curl -X POST http://localhost:5000/predict -H "Content-Type: application/json" -d '{"wrong":[1,2,3]}'
+Invalid requests are detected, logged, and handled gracefully.
 
-Invalid requests return HTTP 400 and are logged using logging.error(). 
+*Objective
+
+The main objective of this assignment is to demonstrate basic concepts of:
+
+- API input validation
+- Error handling in production systems
+- Logging using logging.error()
+- Monitoring of model requests
+- Observability in machine learning services
+
+*New Feature
+
+A validation mechanism was added to detect malformed or missing JSON inputs in the `/predict` endpoint.
+
+When invalid input is detected:
+
+- The error is logged using logging.error()
+- The API returns an HTTP 400 response
+- The issue is recorded in the log file for monitoring
+
+*Logging and Monitoring
+
+The application records:
+
+- Valid prediction requests
+- Invalid input errors
+- Request timestamps
+- Latency information
+
+Logs are stored in:
+
+logs/app.log
+
+*Output
+
+The API provides:
+
+- Prediction results for valid requests
+- JSON error responses for invalid requests
+- Monitoring metrics through `/monitor`
+- Health status through `/health`
+
 
 
 *PE04 Project Description*
