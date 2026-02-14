@@ -1,3 +1,20 @@
+*PE05 - Monitoring App
+
+*Setup
+pip install -r requirements.txt
+
+*Run
+python monitoring_app.py
+
+*Test (valid)
+curl -X POST http://localhost:5000/predict -H "Content-Type: application/json" -d '{"features":[5.1,3.5,1.4,0.2]}'
+
+*Test (invalid)
+curl -X POST http://localhost:5000/predict -H "Content-Type: application/json" -d '{"wrong":[1,2,3]}'
+
+Invalid requests return HTTP 400 and are logged using logging.error(). 
+
+
 *PE04 Project Description*
 
 This project was developed for the PE04 Programming Exercise.
