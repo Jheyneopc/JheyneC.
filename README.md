@@ -1,3 +1,41 @@
+*PE06*
+
+Project Description
+
+The goal of this exercise is to improve the previous pipeline HOS06 by adding model versioning and metadata logging to simulate a basic MLOps workflow.
+
+The application uses the Iris dataset and a machine learning model to simulate training, versioning, deployment, and monitoring of a model in an AWS-like environment.
+
+Objective
+
+The main objective of this assignment is to demonstrate basic concepts of:
+
+* Model versioning using timestamped folders
+* Traceability of model training runs
+* Metadata logging (model name, timestamp, accuracy)
+* Simulated MLOps pipeline (S3, SageMaker, CloudWatch)
+* Observability through logs and metrics
+
+The project simulates a simple MLOps pipeline:
+
+1. Train model and evaluate accuracy
+2. Save model locally
+3. Simulate upload to S3
+4. Log metadata to model registry
+5. Simulate deployment with SageMaker
+6. Simulate monitoring with CloudWatch
+
+Output
+
+The script prints execution details and writes metadata to:
+
+model_registry.log
+
+Example log entry:
+
+20260222_062139, model=iris_model.pkl, accuracy=1.00
+
+
 *PE05 Project Description*
 
 This project was developed for the PE05 Programming Exercise.
