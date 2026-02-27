@@ -21,16 +21,16 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r PE07-AI510/requirements.txt
 
       - name: Train model (Simulate Azure Compute)
         run: |
-          python train_to_azure.py
+          python PE07-AI510/train_to_azure.py
 
       - name: Deploy model (Simulate Azure Endpoint)
         run: |
-          python deploy_azure_model.py
+          python PE07-AI510/deploy_azure_model.py
 
       - name: Monitor deployment (Simulate Azure Monitor)
         run: |
-          python monitor_azure.py
+          python PE07-AI510/monitor_azure.py
