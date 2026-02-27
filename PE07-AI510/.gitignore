@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+
+workspace.json
+model_registry.csv
+azure_storage/
