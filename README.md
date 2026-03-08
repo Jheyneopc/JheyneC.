@@ -15,14 +15,6 @@ The main objective of this assignment is to demonstrate basic concepts of:
 - Model training and deployment simulation
 - Monitoring simulation using generated metrics
 
-The project simulates a simple MLOps pipeline:
-
-1. Install project dependencies
-2. Train the machine learning model
-3. Save the trained model locally
-4. Simulate deployment of the model
-5. Simulate monitoring with performance metrics
-
  Output
 
 The scripts print execution details and simulate logs for:
