@@ -1,3 +1,40 @@
+*PE08*
+
+Project Description
+
+The goal of this exercise is to improve the previous HOS08 pipeline by integrating a GitHub Actions workflow to simulate a basic MLOps CI/CD process.
+
+The application uses the Iris dataset and a machine learning model to simulate training, deployment, and monitoring of a model in a cloud-like environment. The workflow automatically runs the pipeline whenever code is pushed to the repository.
+
+Objective
+
+The main objective of this assignment is to demonstrate basic concepts of:
+
+- Continuous Integration and Continuous Delivery (CI/CD)
+- Automated ML pipeline execution using GitHub Actions
+- Model training and deployment simulation
+- Monitoring simulation using generated metrics
+
+The project simulates a simple MLOps pipeline:
+
+1. Install project dependencies
+2. Train the machine learning model
+3. Save the trained model locally
+4. Simulate deployment of the model
+5. Simulate monitoring with performance metrics
+
+ Output
+
+The scripts print execution details and simulate logs for:
+
+- Model training
+- Model deployment
+- Monitoring metrics (latency and accuracy)
+
+Example output from running the pipeline locally:
+Cloud Monitoring: Latency: 31.22 ms | Accuracy: 0.87
+
+
 *PE06*
 
 Project Description
