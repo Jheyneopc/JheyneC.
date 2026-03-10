@@ -1,4 +1,4 @@
-*Machine Learning and AI Projects*
+**Machine Learning and AI Projects**
 
 This repository contains assignments and projects from my AI510 course focused on machine learning, MLOps, and ML pipelines.
 
