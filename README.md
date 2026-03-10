@@ -1,4 +1,4 @@
-*Machine Learning and AI Projects
+*Machine Learning and AI Projects*
 
 This repository contains assignments and projects from my AI510 course focused on machine learning, MLOps, and ML pipelines.
 
@@ -6,7 +6,7 @@ Topics covered:
 - Machine Learning models
 - CI/CD for ML
 - Experiment tracking
-- Model monitoring*
+- Model monitoring
 
 *PE08*
 
