@@ -8,6 +8,53 @@ Topics covered:
 - Experiment tracking
 - Model monitoring
 
+*PE09*
+
+Project Description
+
+This project validates model interoperability between Scikit-learn and ONNX. The script trains a machine learning model using the Iris dataset, converts the model to ONNX format, and verifies that both versions of the model produce the same predictions.
+
+The goal is to demonstrate how a model trained in one framework can be converted and executed in another environment while maintaining consistent results.
+
+Objective
+
+The main objectives of this assignment are:
+
+Train a machine learning model using Scikit-learn
+
+Convert the trained model to ONNX format
+
+Run the ONNX model using ONNX Runtime
+
+Randomly select 10 samples from the dataset
+
+Compare predictions between the Scikit-learn model and the ONNX model
+
+Validate that both models produce the same predictions
+
+Output
+
+When the script runs, it randomly selects 10 samples from the Iris dataset and compares the predictions from both models.
+
+The program prints the prediction results for each sample and displays the total number of mismatches at the end.
+
+Example output:
+
+Extended Validation: 10 Random Samples 
+Match at index 73: 1
+Match at index 18: 0
+Match at index 118: 2
+Match at index 78: 1
+Match at index 76: 1
+Match at index 31: 0
+Match at index 64: 1
+Match at index 141: 2
+Match at index 68: 1
+Match at index 82: 1
+
+Total mismatches: 0/10
+All predictions match - ONNX conversion validated successfully!
+
 *PE08*
 
 Project Description
